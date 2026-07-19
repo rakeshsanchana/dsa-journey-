@@ -1,0 +1,11 @@
+class Solution {
+public:
+    bool canReach(vector<int>& start, vector<int>& target) {
+        int val1=start[0];
+        int val2=start[1];
+        int t1=target[0];
+        int t2=target[1];
+        if((abs(val1-t1)+abs(val2-t2))%2==0) return true;
+        return false;
+    }
+};
